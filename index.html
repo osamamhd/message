@@ -14,7 +14,7 @@
         <!-- nav bar -->
         <div class="bg-gray-200 py-2 shadow-xl">
             <div class="mx-auto w-11/12 md:w-3/4 lg:w-1/2 flex justify-between text-4xl">
-                <h1 class="pb-2 font-black">"Message"</h1>
+                <h1 class="pb-2 font-black">"Messages"</h1>
 
                 <a href="https://github.com/osamamhd/message">
                     <i class="fab fa-github"></i>
@@ -22,9 +22,9 @@
             </div>
         </div>
 
-        <div class="px-4">
+        <form class="px-4">
             <div class="relative mx-auto w-11/12 md:w-3/4 lg:w-1/2 flex w-full flex-wrap items-stretch mt-6">
-                <input type="text" placeholder="Your Message"
+                <input type="text" id="message" placeholder="Your Message"
                 class="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:ring w-full pr-10" />
                 <span
                 class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 right-0 pr-3 py-3">
@@ -33,16 +33,27 @@
             </div>
 
             <div class="relative mx-auto w-11/12 md:w-3/4 lg:w-1/2 flex w-full flex-wrap items-stretch mt-3">
-                <input type="text" placeholder="Your Name"
+                <input type="text" id="name" placeholder="Your Name"
                 class="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:ring w-full pr-10" />
                 <span
                 class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 right-0 pr-3 py-3">
                 <i class="fas fa-user"></i>
                 </span>
             </div>
+
+            <div class="mx-auto w-11/12 md:w-3/4 lg:w-1/2 ">
+                <div class="flex justify-end">
+                    <button class="border border-gray-600 outline-none focus:outline-none focus:ring py-1 px-2 rounded mt-2">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Send</span>
+                    </button>
+                </div>
             </div>
-        <div>
             
+        </form>
+
+        <div class="px-4">
+            <ul></ul>
         </div>
     </div>
     
